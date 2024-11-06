@@ -1,4 +1,4 @@
-const API_DOMAIN = "https://z45kkv-8080.csb.app";
+const API_DOMAIN = "https://z45kkv-8080.csb.app/";
 export async function get(path){
     const response = await fetch(API_DOMAIN + path)
     const result = await response.json();
