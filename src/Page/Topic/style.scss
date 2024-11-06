@@ -1,0 +1,42 @@
+.card{
+	margin-top: 20px;
+	margin-left: 20px;
+	padding: 20px;
+	margin-bottom: 30px;
+	gap: 25px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	&__item{
+		width: 300px; // Chiều rộng mỗi card
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Hiệu ứng đổ bóng
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Hiệu ứng hover
+
+		&:hover {
+      transform: translateY(-13px); // Nhấc card lên khi hover
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); // Tăng hiệu ứng đổ bóng khi hover
+    }
+		img {
+			margin:0;
+      width: 100%; // Hình ảnh chiếm toàn bộ chiều rộng card
+      height: 200px; // Đặt chiều cao cho hình ảnh
+      object-fit: cover; // Cắt ảnh nếu cần để vừa khung
+      border-bottom: 1px solid #e8e8e8; // Đường viền dưới ảnh
+      border-top-left-radius: 10px; // Bo góc trên bên trái
+      border-top-right-radius: 10px; // Bo góc trên bên phải
+    }
+		&--nocontent {
+			font-weight: 600 !important;
+			padding: 10px 15px; // Khoảng cách trong cho phần nội dung
+			font-size: 16px;
+		}
+
+	}
+	
+
+	
+}
+.ant-card-head-title{
+	font-weight: 700;
+}

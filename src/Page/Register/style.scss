@@ -1,0 +1,52 @@
+.register{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	&__img{
+		margin-top: 0;
+		height: 100%;
+		width: 50%;
+		object-fit: cover;
+		img{
+			max-width: 500px;
+			max-height: auto;
+			margin-left: 10px;
+			margin-top: 0;
+		}
+	}
+	&__form{
+		width: 400px;
+		border-radius: 5px;
+		box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+		&--logo{
+			max-width: 50%;
+			align-items: center;
+			justify-content: center;
+			margin: 0px 75px;
+
+		}
+		&--text{
+			font-size: 24px;
+			font-weight: 700;
+			color: #404080;
+			padding: 10px;
+			border-bottom: 1px solid #404080;
+		}
+		&--input{
+			padding: 10px;
+			border-top: none;
+			border-left: none;
+			border-right: 1px solid #5b4f4fc2;
+			border-bottom: 1px solid #5b4f4fc2;
+			box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;;
+		}
+		&--button{
+			right: 0;
+			position: absolute;
+			background-color: #404080;
+			color: white;
+		}
+	}
+	
+}

@@ -1,0 +1,62 @@
+.form__item {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form__item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form__item--answer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.form__item--answer input[type="radio"] {
+  margin-right: 10px;
+	accent-color: #4704ce
+}
+
+.form__item--answer label {
+  font-size: 16px;
+  color: #333;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.item__selected {
+  border-color: #ff6b6b;
+  background-color: #ffe6e6;
+  color: #d9534f;
+}
+
+.item__selected--true {
+  border-color: #5cb85c;
+  background-color: #e6ffe6;
+  color: #5cb85c;
+}
+
+.form__item--answer:hover label {
+  background-color: #f1f1f1;
+}
+
+.form__item h3 span {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.span--false {
+  color: #d9534f; /* Sai */
+}
+
+.span--true {
+  color: #5cb85c; /* Đúng */
+}

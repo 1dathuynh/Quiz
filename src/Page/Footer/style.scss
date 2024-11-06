@@ -1,0 +1,73 @@
+.footer {
+  background-color: #e9ebea;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-top: 2px solid #cccccc;
+
+  &__contact,
+  &__clause {
+    flex: 1;
+    margin: 10px;
+  }
+
+  &__contact {
+    h4 {
+      font-size: 1.5rem;
+      color: #333333;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+      color: #555555;
+    }
+
+    &--text {
+      color: #222222;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    &--email,
+    &--hotline,
+    &--diachi {
+      font-size: 0.95rem;
+      color: #444444;
+    }
+  }
+
+  &__clause {
+    h4 {
+      font-size: 1.5rem;
+      color: #333333;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 5px 0;
+      a {
+        text-decoration: none;
+        color: #555555;
+        font-size: 0.95rem;
+        transition: color 0.3s;
+        &:hover {
+          color: #333333;
+          font-weight: bold;
+        }
+      }
+    }
+
+    &--terms,
+    &--policy,
+    &--terms-of-service,
+    &--faq {
+      font-size: 1rem;
+      color: #333333;
+    }
+  }
+}
