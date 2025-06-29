@@ -5,66 +5,150 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 100px;
+	padding: 0 20px;
+	flex-wrap: wrap;
 
 	&__logo {
-		height: 14vh;
-		width: 13vh;
+		height: auto;
+		width: 100px;
 		margin-left: 40px;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
 	}
 
 	&__center {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+
 		ul {
 			display: flex;
 			list-style: none;
 			margin: 0;
 			padding: 0;
+			flex-wrap: wrap;
 			justify-content: center;
 		}
-		li{
+
+		li {
 			margin: 0 15px;
-			a{
+
+			a {
 				color: #7D8082;
 				font-size: 18px;
 				font-weight: 700;
 				padding: 15px 20px;
-				&:hover{
+
+				&:hover {
 					color: #92b9e3 !important;
-					border-radius: 7px
+					border-radius: 7px;
 				}
 			}
-			
 		}
 	}
 
 	&__user {
 		display: flex;
-		&--login{
-			a{
+		flex-shrink: 0;
+
+		&--login,
+		&--register {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 10px;
+
+			a {
 				color: #7D8082;
-				padding: 10px;
-				margin-right: 20px;
 				font-weight: 500;
 				font-size: 15px;
-			}
-			
-		}
-		&--register{
-			a{
-				color: #7D8082;
-				margin-right: 50px;
-				font-weight: 500;
-				font-size: 15px;
+				padding: 8px 20px;
+				width: 120px;
+				text-align: center;
+				display: inline-block;
 			}
 		}
 	}
 }
-.active{
-	a{
+
+// Active link
+.active {
+	a {
 		color: #92b9e3 !important;
 	}
-	
-	
 }
-.footer{
+
+// Responsive Tablet
+@media (max-width: 992px) {
+	.header {
+		height: auto;
+		padding: 15px 10px;
+		position: relative;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		
+
+		&__logo {
+			width: 100px;
+			position: absolute;
+			z-index: 99;
+			left: -200px;
+			top: -10px
+		}
+
+		&__center {
+			ul {
+				flex-direction: column;
+				align-items: center;
+
+				li {
+					margin: 10px 0;
+				}
+			}
+		}
+
+		&__user {
+			flex-direction: row;
+			margin-top: 10px;
+		}
+	}
+}
+
+// Responsive Mobile
+@media (max-width: 576px) {
+	.header {
+			display: flex;
+			justify-content: center;
+			align-items: center;	
+		&__logo {		
+			display: none;
+			
+		}
+
+		&__center ul li a {
+			font-size: 16px;
+			padding: 10px 15px;
+		}
+
+		&__user {
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+
+			&--login,
+			&--register {
+				margin: 5px 0;
+				width: 100%;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+.footer {
 	background-color: #ECECEC;
 }
